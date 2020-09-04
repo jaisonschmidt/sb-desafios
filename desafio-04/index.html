@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="tel" id="numero" />
+
+    <button type="button" id="btn">Exibir</button>
+
+    <h1 id="resultado"></h1>
+
+    <script>
+      let inputNumero = document.getElementById("numero");
+      let btnExibir = document.getElementById("btn");
+      let divResultado = document.getElementById("resultado");
+
+      function exibeNumeros() {
+        divResultado.innerHTML = "";
+
+        for (let i = 0; i <= Number(inputNumero.value); i++) {
+          if (i % 2 == 0) {
+            divResultado.innerHTML += i + "<br>";
+          }
+        }
+      }
+
+      btnExibir.onclick = exibeNumeros;
+    </script>
+  </body>
+</html>

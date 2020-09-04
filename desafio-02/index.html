@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button type="button" id="btnClick">Clique</button>
+
+    <h1 id="resultado"></h1>
+
+    <script>
+      // vai armazenar a quantidade de cliques
+      let countClicks = 0;
+
+      // é o objeto button
+      let btnClick = document.getElementById("btnClick");
+
+      // é o painel de resultado
+      let resultPanel = document.getElementById("resultado");
+
+      // quando clicar no button, soma 1 na variável countClicks
+      btnClick.onclick = function () {
+        countClicks += 1;
+        resultPanel.innerHTML = countClicks;
+      };
+    </script>
+  </body>
+</html>

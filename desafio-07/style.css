@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 1rem;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  margin: 0.6rem 0;
+  padding: 1rem;
+  width: 100%;
+}
+
+.btn__primary {
+  background-color: #004c66;
+  color: #ffffff;
+}
+
+.page__title {
+  border-bottom: 2px solid #0e61ac;
+  color: #0e61ac;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.cat-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.cat-box:last-of-type {
+  margin-bottom: 0;
+}
+
+.cat-box .cat-box__photo img {
+  width: 100%;
+}
+
+.cat-box .cat-box__like-count {
+  background-color: #8b7665;
+  color: #ffffff;
+  padding: 0.4rem;
+  text-align: center;
+}
